@@ -1,0 +1,33 @@
+Struttura dei Dati - Relazione Descrittiva
+
+Il dataset analizzato proviene dal file Excel "M3S1E2.xlsx" e rappresenta informazioni sugli ordini. La struttura dei dati è organizzata in diverse entità e presenta diverse trasformazioni per garantire la coerenza e la chiarezza dei dati.
+
+Entità Principale: Ordini
+
+Campi Principali:
+
+COD_PROD: Codice del prodotto, con separazione delle lettere e delle cifre.
+Collaboratore: Nome del collaboratore che ha effettuato l'ordine.
+Regione: Regione associata all'ordine.
+Categoria: Categoria del prodotto, ad esempio, "Auto" o "Moto".
+Prodotto: Nome specifico del prodotto.
+DATA_ORDINE: Data in cui è stato effettuato l'ordine.
+Prezzo_unitario: Prezzo unitario del prodotto.
+Quantità: Quantità di prodotto ordinata.
+Totale: Importo totale dell'ordine, calcolato come il prodotto di Prezzo_unitario e Quantità.
+IVA: Importo dell'IVA, calcolato come il 22% del Totale.
+CATPROD: Combinazione della Categoria e del Prodotto.
+CIFRE: Ultime 4 cifre del COD_PROD.
+Chiavi Primarie:
+
+La chiave primaria è costituita dalla combinazione di COD_PROD, Collaboratore, e DATA_ORDINE, poiché un ordine è univocamente identificato da queste informazioni.
+Tipologie dei Dati:
+
+I campi contengono diverse tipologie di dati, tra cui testo, numeri interi, numeri decimali e date.
+Colonne Aggiunte:
+
+Sono state aggiunte alcune colonne per facilitare l'analisi, come la colonna "OrdineDopoAprile" che indica se l'ordine è stato effettuato dopo aprile.
+Condizioni Speciali:
+
+Sono state applicate alcune trasformazioni condizionali, ad esempio, la sostituzione di valori specifici nella colonna "Prodotto" e l'assegnazione di un valore numerico basato sulla Categoria.
+Questo dataset è stato strutturato in modo da facilitare l'analisi degli ordini, consentendo la creazione di report e visualizzazioni significative.
